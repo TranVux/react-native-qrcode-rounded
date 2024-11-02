@@ -122,7 +122,8 @@
   "release-it": {
     "git": {
       "commitMessage": "chore: release ${version}",
-      "tagName": "v${version}"
+      "tagName": "v${version}",
+      "pushRepo": "git@github-personal:TranVux/react-native-qrcode-rounded.git"
     },
     "npm": {
       "publish": true
