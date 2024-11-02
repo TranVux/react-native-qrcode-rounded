@@ -1,3 +1,5 @@
+import React from 'react';
+
 import { LinearGradient, Stop } from 'react-native-svg';
 
 import type { GradientOrigin, LinearGradientProps } from '../types';
@@ -9,14 +11,14 @@ interface SVGLinearGradientProps extends LinearGradientProps {
 }
 
 export default function SVGLinearGradient({
-  id,
-  size,
-  origin = [0, 0],
-  start = [0, 0],
-  end = [1, 1],
-  colors = ['black', 'white'],
-  locations = [0, 1],
-}: SVGLinearGradientProps) {
+                                            id,
+                                            size,
+                                            origin = [0, 0],
+                                            start = [0, 0],
+                                            end = [1, 1],
+                                            colors = ['black', 'white'],
+                                            locations = [0, 1],
+                                          }: SVGLinearGradientProps): React.JSX.Element {
   return (
     <LinearGradient
       id={id}

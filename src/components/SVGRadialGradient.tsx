@@ -1,3 +1,5 @@
+import React from 'react';
+
 import { RadialGradient, Stop } from 'react-native-svg';
 
 import type { GradientOrigin, RadialGradientProps } from '../types';
@@ -9,14 +11,14 @@ interface SVGRadialGradientProps extends RadialGradientProps {
 }
 
 export default function SVGRadialGradient({
-  id,
-  size,
-  origin = [0, 0],
-  center = [0.5, 0.5],
-  radius = [1, 1],
-  colors = ['black', 'white'],
-  locations = [0, 1],
-}: SVGRadialGradientProps) {
+                                            id,
+                                            size,
+                                            origin = [0, 0],
+                                            center = [0.5, 0.5],
+                                            radius = [1, 1],
+                                            colors = ['black', 'white'],
+                                            locations = [0, 1],
+                                          }: SVGRadialGradientProps): React.JSX.Element {
   return (
     <RadialGradient
       id={id}

@@ -1,3 +1,5 @@
+import React from 'react';
+
 import { type ForwardedRef, forwardRef, useEffect, useMemo, useState } from 'react';
 import {
   ClipPath,
@@ -76,7 +78,7 @@ function SVGQRCodeRounded(
     ...props
   }: SVGQRCodeStyledProps,
   ref?: ForwardedRef<Svg> | null,
-) {
+): React.JSX.Element {
   const { hidePieces = true, onChange: onChangeLogo, ...logoProps } = logo || {};
   const [logoArea, setLogoArea] = useState<LogoArea | undefined>();
   const qrCodeOptions = useMemo(

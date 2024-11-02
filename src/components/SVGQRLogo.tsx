@@ -1,4 +1,4 @@
-import { useEffect, useMemo } from 'react';
+import React, { useEffect, useMemo } from 'react';
 import { Image as SVGImage } from 'react-native-svg';
 
 import type { QRCodeErrorCorrectionLevel } from '../adapters/qrcode';
@@ -23,7 +23,7 @@ export default function SVGQRLogo({
                                     onChange,
                                     isRounded,
                                     ...props
-                                  }: SVGQRLogoProps) {
+                                  }: SVGQRLogoProps): React.JSX.Element | null {
   const { width, height } = useQRCodeLogoSize({
     errorCorrectionLevel,
     logoHref: href,

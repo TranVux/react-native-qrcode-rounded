@@ -1,3 +1,5 @@
+import React from 'react';
+
 import type { GradientProps, GradientOrigin } from '../types';
 import SVGLinearGradient from './SVGLinearGradient';
 import SVGRadialGradient from './SVGRadialGradient';
@@ -8,7 +10,7 @@ export interface SVGGradientProps extends GradientProps {
   origin?: GradientOrigin;
 }
 
-export default function SVGGradient({ type, options, ...props }: SVGGradientProps) {
+export default function SVGGradient({ type, options, ...props }: SVGGradientProps): React.JSX.Element {
   if (type === 'radial') {
     return <SVGRadialGradient {...options} {...props} />;
   }
