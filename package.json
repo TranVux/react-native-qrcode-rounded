@@ -60,7 +60,7 @@
     "type": "git",
     "url": "git+https://github.com/TranVux/react-native-qrcode-rounded.git"
   },
-  "author": "tranvux <96983244+TranVux@users.noreply.github.com> (https://github.com/TranVux)",
+  "author": "TranVux <96983244+TranVux@users.noreply.github.com> (https://github.com/TranVux)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/TranVux/react-native-qrcode-rounded/issues"
