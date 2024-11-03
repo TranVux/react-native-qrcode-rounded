@@ -29,7 +29,7 @@ export default function useQRCodeLogoSize({
 
   const transformLogoSize = useCallback(
     (width: number, height: number) => {
-      const [widthPt, heightPt] = [width / PixelRatio.get(), height / PixelRatio.get()];
+      const [widthPt, heightPt] = [width / PixelRatio.get(), (isRounded ? width : height) / PixelRatio.get()];
 
       const sLogo = widthPt * heightPt;
       const sQR = qrCodeSize ** 2 * pieceSize ** 2;
@@ -73,7 +73,7 @@ export default function useQRCodeLogoSize({
 
       setTransformedLogoSize({ width: newWidth, height: newHeight });
     },
-    [errorCorrectionLevel, logoScale, pieceSize, qrCodeSize],
+    [errorCorrectionLevel, logoScale, pieceSize, qrCodeSize, isRounded],
   );
 
   useEffect(() => {

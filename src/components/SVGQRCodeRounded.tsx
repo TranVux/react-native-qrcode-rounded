@@ -167,12 +167,12 @@ function SVGQRCodeRounded(
 
           <ClipPath id="rounded-logo">
             <Rect
-              x="0"
-              y="0"
-              rx={'100%'}
-              ry={'100%'}
-              width={'100%'}
-              height={'100%'}
+              rx={"100%"}
+              ry={"100%"}
+              width={logoArea?.width || 0}
+              height={logoArea?.width || 0}
+              x={logoArea?.x ? logoArea?.x - pieceSize / 2 : 0}
+              y={logoArea?.y ? logoArea?.y - pieceSize / 2 : 0}
             />
           </ClipPath>
         </Defs>
@@ -201,12 +201,12 @@ function SVGQRCodeRounded(
       <Defs>
         <ClipPath id="rounded-logo">
           <Rect
-            x="0"
-            y="0"
-            rx={'100%'}
-            ry={'100%'}
-            width={'100%'}
-            height={'100%'}
+            rx={"100%"}
+            ry={"100%"}
+            width={logoArea?.width || 0}
+            height={logoArea?.width || 0}
+            x={logoArea?.x ? logoArea?.x - pieceSize / 2 : 0}
+            y={logoArea?.y ? logoArea?.y - pieceSize / 2 : 0}
           />
         </ClipPath>
 

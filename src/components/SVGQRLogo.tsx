@@ -74,9 +74,9 @@ export default function SVGQRLogo({
   return (
     <SVGImage
       href={href}
-      x={logoX + _padding}
-      y={logoY + _padding}
-      preserveAspectRatio="xMidYMid meet"
+      x={logoX + _padding - pieceSize / 2}
+      y={logoY + _padding - (isRounded ? pieceSize / 2 : 0)}
+      preserveAspectRatio={`xMidYMid ${isRounded ? 'slice' : 'meet'}`}
       {...props}
       width={width - _padding * 2}
       height={height - _padding * 2}
